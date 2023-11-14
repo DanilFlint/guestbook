@@ -59,6 +59,14 @@
 			<groupId>com.liferay</groupId>
 			<artifactId>com.liferay.petra.function</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.liferay</groupId>
+			<artifactId>com.liferay.portal.search.spi</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay</groupId>
+			<artifactId>com.liferay.portal.search.api</artifactId>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>

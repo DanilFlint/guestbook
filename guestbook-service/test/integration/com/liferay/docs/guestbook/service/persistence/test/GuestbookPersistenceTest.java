@@ -243,6 +243,12 @@ public class GuestbookPersistenceTest {
 			QueryUtil.ALL_POS, QueryUtil.ALL_POS, getOrderByComparator());
 	}
 
+	@Test
+	public void testFilterFindByGroupId() throws Exception {
+		_persistence.filterFindByGroupId(
+			0, QueryUtil.ALL_POS, QueryUtil.ALL_POS, getOrderByComparator());
+	}
+
 	protected OrderByComparator<Guestbook> getOrderByComparator() {
 		return OrderByComparatorFactoryUtil.create(
 			"GB_Guestbook", "uuid", true, "guestbookId", true, "groupId", true,
